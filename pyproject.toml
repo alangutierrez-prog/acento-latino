@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "acento-latino"
+version = "0.1.0"
+description = "Preprocesador de texto para que tu voz sintética hable con acento latinoamericano: videos, podcasts, audiolibros, cursos. Elimina el ceceo en F5-TTS y modelos similares."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Alan Gutiérrez" }]
+requires-python = ">=3.9"
+keywords = ["tts", "text-to-speech", "spanish", "español", "latam", "seseo", "f5-tts", "voice-cloning", "text-normalization"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: Spanish",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: Multimedia :: Sound/Audio :: Speech",
+    "Topic :: Text Processing :: Linguistic",
+]
+
+[project.urls]
+Repositorio = "https://github.com/alangutierrez-prog/acento-latino"
+Problemas = "https://github.com/alangutierrez-prog/acento-latino/issues"
+
+[project.scripts]
+acento-latino = "acento_latino.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+acento_latino = ["excepciones.txt"]

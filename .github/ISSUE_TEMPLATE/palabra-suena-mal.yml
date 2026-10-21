@@ -1,0 +1,55 @@
+name: Una palabra suena mal
+description: Una palabra, sigla o número no se escucha bien en tu voz sintética.
+title: "Suena mal: "
+labels: ["pronunciación"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Gracias por ayudar a mejorar acento-latino. Mientras se resuelve, puedes arreglarla en tu proyecto con `-e mis_excepciones.txt` (ver CONTRIBUTING.md).
+  - type: input
+    id: palabra
+    attributes:
+      label: Palabra o texto
+      description: Tal como lo escribiste en tu guion.
+      placeholder: gateway
+    validations:
+      required: true
+  - type: input
+    id: salida
+    attributes:
+      label: Qué entregó acento-latino
+      description: La línea que generó el paquete.
+      placeholder: El geituey envía los datos.
+    validations:
+      required: true
+  - type: textarea
+    id: escuchado
+    attributes:
+      label: Qué se escuchó
+      description: Cómo sonó en el audio.
+      placeholder: Se escucha "yeitui", no se entiende.
+    validations:
+      required: true
+  - type: input
+    id: modelo
+    attributes:
+      label: Modelo de voz
+      description: Con qué modelo generaste el audio. Es clave, porque cada modelo lee distinto.
+      placeholder: F5-TTS con F5-Spanish / XTTS v2 / Piper es_MX / otro
+    validations:
+      required: true
+  - type: textarea
+    id: funciono
+    attributes:
+      label: Qué lectura sí funcionó (si encontraste una)
+      description: Si probaste variantes, cuéntanos cuál sonó bien y cuáles no.
+      placeholder: |
+        Bien: puerta de enlace
+        Mal: guéit uéi, géiguei
+  - type: input
+    id: version
+    attributes:
+      label: Versión de acento-latino
+      description: Sale con `acento-latino --version`.
+      placeholder: acento-latino 0.1.0

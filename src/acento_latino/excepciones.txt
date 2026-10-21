@@ -1,0 +1,135 @@
+# Excepciones de acento-latino
+# Formato: palabra o frase = como debe leerse
+# Se aplican antes de las reglas automaticas (c->s, z->s, x->ks, ll->y) y su
+# resultado no se vuelve a tocar. Mayusculas y minusculas dan igual en la
+# izquierda. Las frases largas ganan sobre las cortas.
+# Si una lectura suena mal en tu modelo, cambiala con tu propio archivo:
+#   acento-latino guion.txt -e mis_excepciones.txt
+#
+# Estado de cada lectura: las secciones "VALIDADAS" se escucharon con el modelo
+# indicado y sonaron bien; el resto son PROPUESTAS sin escuchar todavia.
+# Una lectura buena en un modelo puede sonar mal en otro. Si validas o corriges
+# una, cuentanos como en CONTRIBUTING.md.
+
+# --- Siglas de tecnologia ---
+IA = i a
+TI = te i
+API = a pe i
+USB = u ese be
+CPU = se pe u
+GPU = ge pe u
+PDF = pe de efe
+URL = u erre ele
+PC = pe se
+VPN = ve pe ene
+ERP = e erre pe
+CRM = se erre eme
+KPI = ka pe i
+SaaS = sas
+SQL = ese cu ele
+HTML = ache te eme ele
+LTE = ele te e
+5G = sinko ge
+4G = kuatro ge
+
+XML = ekis eme ele
+CEO = si i o
+CFO = si ef o
+CTO = si ti o
+ONU = onu
+OMS = o eme ese
+ONG = o ene ge
+PYME = pime
+pyme = pime
+pymes = pimes
+UF = u efe
+IVA = iva
+RRHH = recursos humanos
+RR.HH. = recursos humanos
+FAQ = preguntas frecuentes
+DIY = haslo tú mismo
+OK = okey
+ok = okey
+
+# --- Siglas industriales ---
+# VALIDADAS con F5-Spanish: PLC, IoT ("ai o ti" sonaba pegado: mejor en espanol).
+PLC = pe ele se
+IoT = internet de las cosas
+IIoT = internet industrial de las cosas
+# PROPUESTAS:
+SCADA = escada
+HMI = ache eme i
+MQTT = eme cu te te
+OPC UA = o pe se u a
+RPM = erre pe eme
+LoRaWAN = lora uan
+
+# --- VALIDADAS con F5-TTS en espanol (F5-Spanish), oct-2026 ---
+# Leccion: con modelos solo en espanol funcionan las silabas del espanol
+# (sófgüer, ráuter) o la palabra en espanol (datos masivos). La grafia inglesa
+# se deforma (sofwer, ruter, big deita sonaron mal).
+hardware = jardwer
+software = sófgüer
+firmware = firmwer
+edge = ech
+cloud = claud
+router = ráuter
+dashboard = dáchbord
+online = onlain
+offline = oflain
+email = imeil
+e-mail = imeil
+Wi-Fi = uaifai
+wifi = uaifai
+Bluetooth = blútut
+Ethernet = éternet
+streaming = estriming
+machine learning = mashin lerning
+big data = datos masivos
+
+# --- PROPUESTAS: anglicismos sin validar ---
+# gateway: geituey, guéit uéi, géiguei y pasarela sonaron mal con F5-Spanish;
+# se busca una lectura que funcione.
+gateway = geituey
+gateways = geitueys
+smartphone = esmarfon
+feedback = fidbak
+podcast = podkast
+marketing = márketin
+startup = estartap
+blockchain = blokchein
+deep learning = dip lerning
+YouTube = yutub
+WhatsApp = guatsap
+Google = gugol
+Microsoft = maikrosof
+Excel = ekssel
+Python = paiton
+Windows = guindous
+Linux = linuks
+
+# --- Nombres propios con x o z que NO siguen la regla ---
+México = Méjico
+mexicano = mejicano
+mexicana = mejicana
+mexicanos = mejicanos
+mexicanas = mejicanas
+Oaxaca = Oajaca
+Texas = Tejas
+Xavier = Javier
+Xalapa = Jalapa
+Ximena = Jimena
+pizza = pitsa
+
+# --- Chat y redes ---
+x = ekis
+q = ke
+xq = porke
+pq = porke
+tb = también
+tmb = también
+pls = porfavor
+xfa = porfavor
+
+# --- VALIDADAS con F5-Spanish: correcciones observadas ---
+porque = porke

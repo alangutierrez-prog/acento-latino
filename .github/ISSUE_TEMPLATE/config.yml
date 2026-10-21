@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Cómo encontrar una lectura que funcione
+    url: https://github.com/alangutierrez-prog/acento-latino/blob/main/CONTRIBUTING.md
+    about: Guía para probar variantes de una palabra con tu modelo de voz.
