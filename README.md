@@ -9,7 +9,7 @@ No necesita GPU, ni reentrenar nada, ni dependencias: es Python puro y funciona 
 **Sirve para cualquier proyecto con voz sintética en español latino:** videos de YouTube, TikTok o Reels, podcasts, audiolibros, cursos, publicidad, presentaciones, asistentes de voz, juegos o accesibilidad. Úsalo libremente, también en proyectos comerciales.
 
 ```
-pip install acento-latino
+pip install git+https://github.com/alangutierrez-prog/acento-latino
 ```
 
 ## Antes y después
@@ -120,7 +120,7 @@ Ninguna lista de palabras cubre todo, y cada modelo de voz lee el inglés a su m
 
 1. **Si una palabra suena mal, arréglala al tiro** en tu proyecto con `-e mis_excepciones.txt`.
 2. **Cuéntanos qué funcionó** con el formulario ["Una palabra suena mal"](../../issues/new/choose), diciendo con qué modelo lo probaste.
-3. Las lecturas validadas entran a la siguiente versión, y **todos** reciben el arreglo con `pip install --upgrade acento-latino`.
+3. Las lecturas validadas entran a la siguiente versión, y **todos** reciben el arreglo con `pip install --upgrade git+https://github.com/alangutierrez-prog/acento-latino`.
 
 En [`excepciones.txt`](src/acento_latino/excepciones.txt) cada lectura está marcada como **VALIDADA** (escuchada con un modelo concreto) o **PROPUESTA** (aún sin escuchar). La guía [CONTRIBUTING.md](CONTRIBUTING.md) explica cómo probar variantes de una palabra en pocos minutos y lo que hemos aprendido.
 
